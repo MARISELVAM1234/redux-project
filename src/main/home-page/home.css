@@ -1,0 +1,47 @@
+.headset-con{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.headset-con img{
+    height: 250px;
+    width: 320px;
+}
+.headset-con p {
+width: 300px;
+text-align: center;
+}
+
+.headset-item {
+    border: 1px solid;
+    margin-bottom: 30px;
+    background-color:whitesmoke;
+box-shadow: 5px 5px 5px blanchedalmond;
+
+}
+
+
+.icon {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #icon-1 {
+    border: none;
+    font-size: 30px;
+    /* margin-left: 25px; */
+    color:rgb(123, 31, 162) ;
+  }
+  #icon-1:hover{
+    color: red;
+  }
+  #icon-2 {
+    border: none;
+    font-size: 30px;
+    margin-left: 25px;
+    color: rgb(123, 31, 162);
+  }
+  #icon-2:hover {
+    color: red;
+  
+  }
