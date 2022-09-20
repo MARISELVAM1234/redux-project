@@ -3,13 +3,13 @@ import {AppBar,Box ,Toolbar , Typography , Button} from '@mui/material/';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useNavigate } from 'react-router-dom';
-// import { useDispatch } from 'react-redux';
-// import { authe } from '../redux/slice';
+import { useDispatch } from 'react-redux';
+import { authe } from '../redux/slice';
 
 
  const Header = () => {
    const navigate = useNavigate()
-  //  const dispatch = useDispatch()
+   const dispatch = useDispatch()
 
    const navi = () =>{
     navigate("/cart")
@@ -18,8 +18,8 @@ import { useNavigate } from 'react-router-dom';
     navigate("/fav")
   }
   const logout = () =>{
-    // dispatch (authe( false))
-    // localStorage.setItem("isLoggedIn" , JSON.stringify(false)) ;
+    dispatch (authe( false))
+    localStorage.setItem("isLoggedIn" , JSON.stringify(false)) ;
   
   }
 

@@ -16,14 +16,14 @@ import { Provider } from 'react-redux';
 
 
 function App() {
+
   
   return (
     <div className="App">
      
       <Provider store={store}>
-{console.log(store)}
       <BrowserRouter> 
-      {/* {store?.authenticated ? ( */}
+      {/* {state?.cart?.authenticated ? ( */}
             <> 
             <Header></Header>
             <Routes>
@@ -36,12 +36,12 @@ function App() {
               </Routes>
             </>
               
-          {/* // ) : (
-          //     <Routes>
-          //       <Route path="/" element={<Login />}></Route>
-          //       <Route path="*" element={<Navigate to="/"></Navigate>}></Route>
-          //     </Routes>
-          // )} */}
+          {/* ) : (
+              <Routes>
+                <Route path="/" element={<Login />}></Route>
+                <Route path="*" element={<Navigate to="/"></Navigate>}></Route>
+              </Routes>
+          )} */}
       </BrowserRouter>
       </Provider>
      

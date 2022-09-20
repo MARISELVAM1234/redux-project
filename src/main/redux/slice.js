@@ -41,9 +41,6 @@ export const cartSlice = createSlice({
     authenticated :  JSON.parse(localStorage.getItem('isLoggedIn'))|| false ,
   },
   reducers: {
-    addToCart: (state, action) => {
-      state.cartItem = action.payload;
-    },
     setAdd : (state , action) =>{
       state.setAddCart = action.payload
     }, 

@@ -15,7 +15,7 @@ const dispatch = useDispatch()
 
 const secCart = state.cart.setAddCart
 const isExit = secCart.some((val) => val.id === data.id)
-if (isExit){
+if (isExit === true){
   return  data
 }
 else{

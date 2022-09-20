@@ -2,19 +2,20 @@ import React,{useState} from "react";
 import { useNavigate } from "react-router-dom";
 import "./login.css";
 import { TextField ,Button} from "@mui/material/";
-// import { useDispatch, useSelector } from "react-redux";
-// import { authe } from "../redux/slice";
+import { useDispatch, useSelector } from "react-redux";
+import { authe } from "../redux/slice";
 
 
 const Login = () => {
-  // const dispatch = useDispatch()
+  const dispatch = useDispatch()
   const [userName] = useState(["MARISELVAM"]);
   const [password] = useState(["123456"]);
   const [getName, setGetName] = useState([]);
   const [getPass, setGetpass] = useState([]);
   const navigate = useNavigate();
-//   const state = useSelector((state) => state)
-//  const set = state.cart.authenticated
+  const state = useSelector((state) => state)
+ const set = state.cart.authenticated
+ console.log(set, "setLogin")
 
 
   const loginFun = (event) => {
@@ -33,9 +34,9 @@ const Login = () => {
       alert("INVALID USERNAME AND PASSWORD");
     }
 
-    // dispatch(authe(true))
-    // localStorage.setItem('isLoggedIn',JSON.stringify(true))
-    // console.log(set , "state");
+    dispatch(authe(true))
+    localStorage.setItem('isLoggedIn',JSON.stringify(true))
+    console.log(set , "state");
   };
 
 
